@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mascotas – Alejandro González</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+
+    <!-- TASK 2 | Header con Flexbox -->
+    <header>
+      <a class="logo" href="index.html">Alejandro González</a>
+      <nav>
+        <a href="sobre_mi.html">Sobre mí</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="mascotas.html">Mascotas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="section-title">Mis Mascotas</h2>
+
+      <!-- ═══════════════════════════════════════════════════════
+           TASK 4 – OPCIÓN A: GALERÍA CON FLEXBOX
+           - display: flex
+           - flex-wrap: wrap  → las imágenes saltan de línea
+           - justify-content: center
+           - gap para separación uniforme
+           - flex: 1 1 220px en cada tarjeta → responsivo
+      ════════════════════════════════════════════════════════ -->
+      <h3 style="color: chartreuse; margin-bottom: 16px;">
+        Distribución con Flexbox
+      </h3>
+
+      <div class="galeria-flex">
+
+        <div class="mascota-card">
+          <img src="images/emil-dresden-emil.jpg" alt="El One Bobo" />
+          <p>El One Bobo N 🐱</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/gatobruja.webp" alt="Gato Bruja" />
+          <p>Who the hell is sis? 🐈‍⬛</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/Cw3eFuEqgb8-png__880.webp" alt="Gato Risa" />
+          <p>Who the hell is bro? 😹</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/tohru adachi.webp" alt="Adachi" />
+          <p>El confundido 🤔</p>
+        </div>
+
+        <!-- Imagen 5: reutilizamos con otra perspectiva -->
+        <div class="mascota-card">
+          <img src="images/emil-dresden-emil.jpg" alt="El One Bobo mirando" />
+          <p>El One Bobo curioseando 🐾</p>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="mascota-card">
+          <img src="images/gatobruja.webp" alt="Gato Bruja durmiendo" />
+          <p>Sis en modo zen 😌</p>
+        </div>
+
+      </div>
+
+      <h3 style="color: chartreuse; margin: 40px 0 16px;">
+        Distribución con Grid (mosaico)
+      </h3>
+
+      <div class="galeria-grid">
+
+        <div class="mascota-card card-wide">
+          <img src="images/emil-dresden-emil.jpg" alt="El One Bobo" />
+          <p>El One Bobo – protagonista principal 🏆</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/gatobruja.webp" alt="Gato Bruja" />
+          <p>La misteriosa sis 🐈‍⬛</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/Cw3eFuEqgb8-png__880.webp" alt="Gato Risa" />
+          <p>Bro en su mejor ángulo 😹</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/tohru adachi.webp" alt="Adachi" />
+          <p>El pensador 🤔</p>
+        </div>
+
+        <div class="mascota-card card-wide">
+          <img src="images/gatobruja.webp" alt="Gato Bruja panorámica" />
+          <p>Sis tomando el sol ☀️</p>
+        </div>
+
+        <div class="mascota-card">
+          <img src="images/emil-dresden-emil.jpg" alt="El One Bobo retrato" />
+          <p>Retrato oficial 🎖️</p>
+        </div>
+
+      </div>
+
+      <a class="back-link" href="index.html">← Volver al inicio</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Alejandro González · Portafolio riwi/p>
+    </footer>
+
+  </body>
+</html>
